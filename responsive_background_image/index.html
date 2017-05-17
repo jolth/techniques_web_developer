@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang=en>
+    <head>
+        <meta charset="UTF-8">
+        <title>Responsive Background Image</title>
+        <style>
+            body {
+                /*location of the image*/
+                background-image: url(images/834589.jpg);
+                /*background image is centered vertically and horizontally at all time*/
+                background-position: center center;
+                /*background image doesn't tile*/
+                background-repeat: no-repeat;
+                /*background image is fixed in the viewport so that it doesn't
+                 move when the content's height is greater than the image's
+                 height*/
+                background-attachment: fixed;
+                /*This is what makes the background image rescale based on the
+                 contrainer's siza*/
+                background-size: cover;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                /*Set a background color that will be display while the
+                  background image is loading*/
+                background-color: #464646;
+            }
+            @media only screen and (max-width: 767px) {
+                body {
+                    background: url(images/backgrpund_768.jpg) center center no-repeat fixed;
+                    background-size: cover;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+    </body>
+</html>
