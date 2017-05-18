@@ -1,0 +1,18 @@
+{
+  "name": "vee-validate-test",
+  "version": "1.0.0",
+  "description": "Vee-validate testing",
+  "main": "main.js",
+  "scripts": {
+          "build": "browserify script.js -o main.js -t [ babelify --presets [ es2015 ] ]"
+  },
+  "author": "jolth",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "vee-validate": "^2.0.0-rc.3",
+    "vue": "^2.3.3"
+  }
+}
